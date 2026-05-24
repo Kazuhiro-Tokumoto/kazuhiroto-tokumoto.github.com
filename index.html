@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #111;
+      --muted: #666;
+      --border: #ddd;
+      --bg: #fff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #eee;
+        --muted: #999;
+        --border: #333;
+        --bg: #111;
+      }
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 4rem 1.5rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1rem;
+    }
+
+    .works {
+      list-style: none;
+    }
+
+    .works li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      gap: 1rem;
+    }
+
+    .works li:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .works a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .works a:hover {
+      text-decoration: underline;
+    }
+
+    .works span {
+      color: var(--muted);
+      font-size: 0.875rem;
+      white-space: nowrap;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.875rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+    }
+
+    .links a:hover {
+      border-color: var(--text);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>徳本一廣</h1>
+    <p>学生/広島</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      数学と暗号しかできねぇよ！<br>
+      学生！アホ！何もできない！
+    </p>
+  </section>
+  <section>
+    <h2>Links</h2>
+    <div class="links">
+      <a href="https://github.com/kazuhiro-tokumoto" target="_blank">GitHub</a>
+      <a href="mailto:tokumotokazuhiro@icloud.com">Mail</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 徳本一廣
+  </footer>
+
+</body>
+</html>
